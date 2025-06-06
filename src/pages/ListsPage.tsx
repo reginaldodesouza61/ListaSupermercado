@@ -107,6 +107,12 @@ export const ListsPage: React.FC = () => {
         onClose={() => setIsCreateModalOpen(false)}
         onSuccess={handleCreateSuccess}
       />
+
+      {/* Rodapé com o crédito */}
+      <footer className="mt-12 text-center text-gray-400 text-sm">
+        Lista de Compras &copy; {new Date().getFullYear()}<br />
+        Desenvolvido por Reginaldo de Souza
+      </footer>
     </div>
   );
 };
